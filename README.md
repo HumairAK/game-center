@@ -1,6 +1,2 @@
-# minimaxStrategy
-2 games that employ the minimax strategies (Memoize, Myopia and Alpha-Beta Pruning)
-
-To use, run game_view.py and follow the instructions. 
-
-You have the choice between 2 games, subtract a square or tippy, and a choice between 3 computer strategies to play against: Memoize, Myopia and Pruning. 
+#Game Center: Tippy Game, Subtract Square and Minimax AI
+A game center containing Tippy Game, a variation of Tic-Tac-Toe, and Subtract Square, a game consisting of subtracting a number until it becomes 0. The human player has the choice to face an AI based on the Minimax Algorithm.

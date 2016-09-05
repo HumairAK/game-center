@@ -27,7 +27,7 @@ class GameView:
         print(self.state.instructions)
         print(self.state)
         print()
-        while not self.state.over:
+        while self.state.possible_next_moves():
             if self.state.next_player == 'p1':
                 m = self.state.get_move()
                 while not m in self.state.possible_next_moves():
@@ -40,7 +40,7 @@ class GameView:
             else:
                 # The computer makes a move.
                 m = self.strategy.suggest_move(self.state)
-                print('The computer chooses: {}'.format(m))
+                print('The AI chooses: {}'.format(m))
             self.state = self.state.apply_move(m)
             print('New game state: ', str(self.state))
             print()
@@ -68,14 +68,16 @@ if __name__ == '__main__':
                  'mpy': StrategyMinimaxMyopic})
     g = ''
     while not g in game_state.keys():
-        g = input('s to play Subtract Square, t to play Tippy: ')
+        print("\n******* WELCOME TO THE GAME CENTER *******\n")
+        g = input('Press s to play SUBTRACT SQUARE, t to play TIPPY:\n ')
     s = ''
     while not s in strategy.keys():
-        s = input('r for random strategy for computer, \n' +
-                  'm for Minimax strategy, \n' +
-                  'mm for Minimax Memoize strategy, \n' +
-                  'mp for Minimax Prune strategy,\n' +
-                  'mpy for Minimax Myopic strategy: ')
+        print("Press: \n")
+        s = input('\t - r for random strategy for computer, \n' +
+                  '\t - m for Minimax strategy, \n' +
+                  '\t - mm for Minimax Memoize strategy, \n' +
+                  '\t - mp for Minimax Prune strategy,\n' +
+                  '\t - mpy for Minimax Myopic strategy: ')
     GameView(game_state[g], strategy[s]).play()
     
 
