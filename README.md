@@ -1,7 +1,13 @@
 #Game Center: Tippy Game, Subtract Square and Minimax AI
+A game center containing Tippy Game, a variation of Tic-Tac-Toe, and Subtract Square, a game consisting of subtracting a number until it becomes 0. The human player has the choice to face an AI based on the Minimax Algorithm.
 
+##Tippy Game 
 
-#Usage 
+##Subtract a Square Game 
+
+##AI-Strategies
+
+##Usage 
 Use Python 3.4 and terminal for optimal results 
 
 Type the following in termianl to run the python file:
@@ -9,9 +15,7 @@ Type the following in termianl to run the python file:
 <code>$python game_view.py</code>
 
 
-#About Project
 
-A game center containing Tippy Game, a variation of Tic-Tac-Toe, and Subtract Square, a game consisting of subtracting a number until it becomes 0. The human player has the choice to face an AI based on the Minimax Algorithm.
 
 #Authors 
 
