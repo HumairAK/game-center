@@ -2,8 +2,10 @@
 By: Humair Khan and Nargiza Nosirova
 
 #Usage 
-Use Python 3.4 and terminal for optimal results \n
-Type the following in termianl to run the python file:\n
+Use Python 3.4 and terminal for optimal results 
+
+Type the following in termianl to run the python file:
+
 <code>$python game_view.py</code>
 
 
